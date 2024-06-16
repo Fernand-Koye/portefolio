@@ -1,0 +1,389 @@
+/* CSS de base */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Styles ajoutés pour aligner et rapprocher le texte à gauche de l'image */
+
+.profile {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  margin-bottom: 20px; /* Espacement entre les sections */
+}
+
+.profile .description {
+  max-width: 50%; /* Ajuster la largeur du texte descriptif */
+  margin-right: 20px; /* Espacement entre le texte et l'image */
+  text-align: left; /* Aligner le texte à gauche */
+}
+
+.profile img {
+  border-radius: 10%;
+  width: 200px;  /* Taille de l'image */
+  height: 200px; /* Assurer que l'image soit carrée */
+  object-fit: cover;
+}
+
+.skills {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Permettre le retour à la ligne si nécessaire */
+}
+
+.skill {
+  width: 30%; /* Ajuster la largeur des compétences selon vos besoins */
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.skills span {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.explanation p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #333;
+  color: #fff;
+}
+
+footer .contact-info {
+  margin-top: 10px;
+}
+
+footer .contact-info a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .contact-info a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajouter ces styles à la fin de votre fichier style.css */
+
+.project {
+  display: flex;
+  flex-wrap: wrap; /* Permettre le retour à la ligne si nécessaire */
+  justify-content: space-between; /* Aligner les éléments sur la même ligne avec espace entre eux */
+  margin-bottom: 20px; /* Espacement entre les sections de projet */
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column; /* Afficher les éléments en colonne (image et description) */
+  align-items: flex-start; /* Aligner les éléments à gauche */
+  text-align: left; /* Aligner le texte à gauche */
+  width: 48%; /* Ajuster la largeur de chaque projet pour mieux aligner les images */
+  margin-bottom: 20px; /* Espacement entre les projets */
+}
+
+.project-info.full-width {
+  width: 100%; /* La troisième image prend toute la largeur */
+  align-items: center; /* Centrer les éléments horizontalement */
+  text-align: center; /* Centrer le texte */
+}
+
+.project-info img, .link-info img {
+  max-width: 100%; /* Ajuster la taille maximale des images */
+  height: auto; /* Assurer la proportion */
+  margin-bottom: 10px; /* Espacement entre l'image et le texte */
+}
+
+.project-info .description, .link-info .description {
+  margin-top: 10px; /* Espacement entre l'image et le texte */
+}
+
+.project-info .description p, .link-info .description p {
+  text-align: left; /* Aligner le texte à gauche */
+}
+
+.indent {
+  margin-left: 20px; /* Ajuster la marge pour les paragraphes avec tirets */
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around; /* Centrer les deux premières images horizontalement */
+  margin-bottom: 20px; /* Espacement entre les liens */
+}
+
+.link-info {
+  width: 30%; /* Ajuster la largeur de chaque lien */
+  margin-bottom: 20px; /* Espacement entre les liens */
+}
+
+.link-info img {
+  max-width: 100%; /* Ajuster la taille maximale des images */
+  height: auto; /* Assurer la proportion */
+}
+
+.link-info .description {
+  text-align: center; /* Centrer le texte */
+  margin-top: 10px; /* Espacement entre l'image et le texte */
+}
+
+.centered-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.centered-link img {
+  width: 50%; /* Réduire la taille de l'image centrée */
+  margin-bottom: 10px;
+}
+
+.skills-images {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement les éléments */
+  margin-top: 20px; /* Espacement entre les projets et les nouvelles images */
+}
+
+.skills-images a {
+  display: inline-block;
+  margin: 0 20px; /* Espacement entre les images */
+}
+
+.skills-images img {
+  max-width: 500px; /* Augmenter la taille maximale des images */
+  height: auto; /* Assurer la proportion */
+  border-radius: 10%; /* Coins arrondis */
+}
+
+/* Fichier dev.css pour les styles spécifiques à dev.html */
+
+.dev-project {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Espacement entre les sections de projet */
+}
+
+.dev-project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligner les éléments à gauche */
+  text-align: left; /* Aligner le texte à gauche */
+  width: 60%; /* Ajuster la largeur de la section de projet */
+}
+
+.dev-project-info img {
+  max-width: 100%; /* Ajuster la taille maximale des images */
+  height: auto; /* Assurer la proportion */
+  margin-bottom: 10px; /* Espacement entre l'image et le texte */
+}
+
+.dev-project-info .description {
+  margin-top: 10px; /* Espacement entre l'image et le texte */
+}
+
+.dev-project-info .description h2 {
+  margin-top: 0; /* Supprimer la marge supérieure du titre */
+}
+
+.dev-project-info .description p {
+  text-align: left; /* Aligner le texte à gauche */
+  margin-left: 20px; /* Ajouter une indentation pour les paragraphes */
+}
+
+.dev-return-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px; /* Espacement au-dessus du retour à l'accueil */
+}
+
+.dev-return-home img {
+  width: 150px; /* Taille de l'image de retour */
+  height: auto;
+}
+
+.dev-return-home .description {
+  margin-top: 10px;
+}
+
+/* CSS spécifique pour la section "À propos de moi" */
+
+#cv {
+  margin-bottom: 20px;
+}
+
+#cv h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#cv a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#centres-interet {
+  margin-top: 20px;
+}
+
+.interests {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.interests img {
+  max-width: 150px;
+  height: auto;
+  margin: 10px;
+}
+
+/* Styles pour la section "Valeurs de travail" */
+
+#valeurs-travail {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#valeurs-travail h2 {
+  font-weight: bold;
+}
+
+#valeurs-travail .values {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+#valeurs-travail .values p {
+  margin-top: 10px;
+}
+
+/* Styles pour la section "Centres d'intérêt" */
+
+#centres-interet {
+  margin-top: 40px; /* Espacement supplémentaire après "Valeurs de travail" */
+  text-align: center;
+}
+
+#centres-interet h2 {
+  font-weight: bold;
+}
+
+/* Ajustement pour les images des centres d'intérêt */
+
+#centres-interet .interests {
+  display: flex;
+  justify-content: space-around; /* Espacement équitable entre les éléments */
+  margin-top: 20px; /* Espacement en haut */
+}
+
+#centres-interet .interests img {
+  max-width: 150px; /* Ajustement de la taille maximale des images */
+  height: auto; /* Assurer la proportion */
+  border-radius: 10%; /* Coins arrondis */
+  margin: 0 10px; /* Espacement horizontal entre les images */
+}
+
+
+#cv {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#cv h2 {
+  font-weight: bold;
+}
+
+#cv .cv-image {
+  max-width: 100%;
+  margin: auto;
+}
+
+#cv .cv-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Centrer la section "Projet professionnel" */
+#projet-professionnel {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#projet-professionnel h3 {
+  font-weight: bold;
+}
+
+#projet-professionnel .values {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+/* Ajustement pour les sections "Projet professionnel" et "Valeurs de travail" */
+
+#projet-professionnel, #valeurs-travail {
+  text-align: left; /* Aligner le texte à gauche */
+  width: 100%; /* Prend toute la largeur disponible */
+  padding: 20px; /* Ajouter un padding pour l'espace intérieur */
+  box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+  margin-top: 20px; /* Espacement en haut */
+}
+
+#projet-professionnel h3, #valeurs-travail h2 {
+  font-weight: bold;
+  text-align: center; /* Centrer le titre */
+}
+
+#projet-professionnel .values, #valeurs-travail .values {
+  max-width: 1000px; /* Largeur maximale du contenu */
+  margin: auto; /* Centrer horizontalement le contenu */
+}
